@@ -904,7 +904,7 @@
                         <div class="word">
                             黑森林巧克力蛋糕
                         </div>
-                        <img src="img/section3_pic01.png">
+                        <img src="img/section3_pic01.png" >
                     </div>
                     <div class="img2">
                         <img src="img/section3_pic02.png">
@@ -1050,20 +1050,22 @@
     </div>
     <div class="container">
         <div class="about_bottom">
-            <div class="pic1">
+
+            <div class="pic1" data-aos="fade-up">
                 <img src="img/handmade-hand-01.jpg">
             </div>
             <div class="pic2">
-                <h2>嚴選當季健康食材 健康手作
+                <h2 data-aos="fade-left">嚴選當季健康食材 健康手作
                     <br> 用心看得見!
                     <br> 美味甜點值得您來品嚐!
                     <br>
                 </h2>
+                </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="infor_L col-6">
                 <h2>〈門市資訊〉</h2>
                 <h4>
@@ -1145,12 +1147,6 @@
         <div class="copyright">©color c’ode 三分甜手作甜點小屋 All Rights Reserved.</div>
     </div>
 
-
-
-
-
-
-
     <script>
         function initMap() {
             var uluru = { lat: 24.148332, lng: 120.6620673 };
@@ -1175,7 +1171,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+    
     <script>
         $(function () {
             $('a[href*="#"]:not([href="#"])').click(function () {
@@ -1193,6 +1189,7 @@
                 }
             });
         });
+
     </script>
     <!-- Initialize Swiper -->
     <script>
@@ -1214,6 +1211,11 @@
             },
         });
     </script>
+          
+          <script>
+                AOS.init();
+              </script>    
+
 
 </body>
 
