@@ -1,0 +1,386 @@
+* {
+    font-family: "Microsoft JhengHei";
+}
+
+.navbar-1 {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    background-color: rgb(148, 61, 61);
+}
+
+.navbar-1 ul {
+    position: absolute;
+    left: 300px;
+    top: 60px;
+}
+
+.navbar-1 ul li {
+    padding-left: 60px;
+    font-size: 25px;
+    border-right: solid 1.5px rgb(131, 130, 130);
+    display: inline-block;
+}
+.clearfix {
+    clear: both;
+}
+
+.navbar-1 {
+    width: 100%;
+    background-color: rgb(220, 212, 212);
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Microsoft JhengHei"
+}
+
+.news-container {
+    padding: 80px 0px;
+    margin: 0 auto;
+    color: rgb(51, 32, 20);
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+}
+
+.news {
+    font-family: "Microsoft JhengHei";
+    position: relative;
+}
+.newsTOP h1 {
+    font-size: 55px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.newsTOP {
+    font-weight: bolder;           
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 15px;
+    position: relative;
+}
+
+.newsBOTTOM {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.item {
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+
+.product .item-name1 {
+    background-color: rgb(233, 210, 167);
+    font-size: 32px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-left: 430px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.product .item-name2 {
+    background-color: rgb(233, 210, 167);
+    font-size: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 460px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.product .item-name3 {
+    background-color: rgb(233, 210, 167);
+    font-size: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 00px;
+    margin-left: 460px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+
+.col-md-4 h2 {
+    color: rgb(51, 32, 20);
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.unslider {
+    position: relative;
+    padding-top: 126px;
+}
+
+.unslider-arrow {
+    top: 350px;
+    transform: translateY(50%);
+}
+
+.unslider-nav {
+    position: absolute;
+    bottom: 30px;
+    width: 100px;
+    left: 45%;
+    transform: translateX(50%);
+}
+
+/* 上面是設定圖片圓點的css */
+
+.bg-img1 {
+    max-width: 100%;
+    height: 780px;
+    background-image: url("img/slider_01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img2 {
+    max-width: 100%;
+    height: 780px;
+    background-image: url("img/slider_02.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img3 {
+    max-width: 100%;
+    height: 780px;
+    background-image: url("img/slider_03.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav-item {
+    font-family: "Microsoft Jhehgheis";
+    left: 150px;           
+    position: relative;
+    border-left: solid 1px gray;
+    padding-left: 15px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.navbar-brand {
+    position: relative;
+    left: 100px;
+}
+.section1 {
+    margin-bottom: 30px;
+}
+
+.section2 {
+    margin-bottom: 30px;
+}
+
+.section3 {
+    height: 1000px;
+    background-color: #B5F1E5;
+    text-align: center;
+    font-family: "Microsoft JhengHei";
+    margin-bottom: 20px;
+    position: relative;
+    color: rgb(58, 40, 13);
+}
+
+.section3_Top {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section3_Top h1 {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom:20px;
+}
+.line_L {
+    display: inline-block;
+    border: solid 1px gray;
+    width: calc((100% - 400px)/2);
+}
+
+.line_R {
+    display: inline-block;
+    border: solid 1px gray;
+    width: calc((100% - 400px)/2);
+}
+.section3_bottom h1 {
+    font-size: 50px;
+    color: rgb(58, 40, 13);
+    line-height: 60px;
+    font-weight: bold;
+    
+}
+.section3_bottom h2 {
+    font-size: 33px;
+    color: rgb(58, 40, 13);
+    line-height: 60px;
+    margin-top: 40px;
+}
+.section3_bottom {
+    margin: 0 auto;
+    color: rgb(58, 40, 13);
+}
+
+.section3_img1 {
+    position: absolute;
+    left: 300px;
+    top: 450px;
+
+}
+
+.section3_img2 {
+    position: absolute;
+    left: 700px;
+    top: 550px;
+}
+
+.section3_img3 {
+    position: absolute;
+    left: 1100px;
+    top: 450px;
+}
+
+.section5 h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.section5 h2 {
+    font-size: 45px;
+}
+
+.section5 p {
+    font-size: 30px;
+}
+
+.product card {
+    background-color: pink;
+}
+
+#map {
+    width: 600px;
+    height: 400px;
+}
+
+.navitme {
+    border-left: solid 1px gray;
+
+}
+
+.nav-link {
+    font-size: 30px;
+}
+
+.product {
+    max-width: 100%;
+    font-family: "Microsoft JhengHei";
+    color:  rgb(51, 32, 20);
+    background-color: rgb(245, 243, 239);
+    position: relative;
+}
+
+.product_Top {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_Top h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.product_Top .line_L {
+    display: inline-block;
+    border: solid 1px gray;
+    width: calc((100% - 400px)/2);
+}
+
+.product_Top .line_R {
+    display: inline-block;
+    border: solid 1px gray;
+    width: calc((100% - 400px)/2);
+}
+
+.product .item-h2 {
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 40px;
+}
+
+.product .row {
+    padding: 10px;
+    margin-bottom: 0px;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* 上方是設定產品表格內容 */
+
+.col-md-4 .product-price {
+    padding-bottom: 25px;
+}
+
+.aboutus {
+    background-color: #E2D6A8;
+    margin: 0 auto;
+
+}
+.about_Top {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_Top h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.about_Top .line_L {
+    display: inline-block;
+    border: solid 1px gray;
+    width: calc((100% - 400px)/2);
+}
+
+.about_Top .line_R {
+    display: inline-block;
+    border: solid 1px gray;
+    width: calc((100% - 400px)/2);
+}
+.aboutus .top h1 {
+    font-size: 42px;
+}
+
+.aboutus .block {
+    display: inline-block;
+    border: solid 1px red;
+}
+
+.aboutus .block2 {
+    left: 0px;
+}
