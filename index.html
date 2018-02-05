@@ -19,40 +19,29 @@
     <style>
         body {
             font-family: "Microsoft JhengHei";
+            box-sizing: border-box;
         }
 
         .bg-light {
             background-color: rgba(255, 218, 224, 0.9)!important;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom:30px;
+            position: absolute;
             /* display: inline-block; */
         }
 
         .navbar-1 {
             width: 100%;
-            height: 160px;
+            /* height: 160px; */
             position: relative;
             background-color: rgb(148, 61, 61);
         }
 
         .navbar-1 ul {
             position: absolute;
-            left: 300px;
-            top: 60px;
+            left: 250px;
             display: inline-block;
         }
-
-        .navbar-1 ul li {
-            padding-left: 60px;
-            font-size: 25px;
-            border-right: solid 1.5px rgb(131, 130, 130);
-            display: inline-block;
-        }
-
-        /* .nav-link{
-            width: 20px;
-        } */
 
         .clearfix {
             clear: both;
@@ -62,11 +51,9 @@
             max-width: 100%;
             background-color: rgb(220, 212, 212);
             display: inline-block;
-            font-size: 20px;
         }
-
         .swiper-wrap {
-            padding-top: 130px;
+            padding-top:62px;
         }
 
         .swiper-container {
@@ -76,7 +63,7 @@
 
         .swiper-slide {
             text-align: center;
-            font-size: 18px;
+            font-size: 15px;
             background: #fff;
             /* Center slide text vertically */
             display: -webkit-box;
@@ -94,7 +81,7 @@
         }
 
         .news-container {
-            padding: 80px 0px;
+            padding:50px 0px;
             margin: 0 auto;
             color: rgb(51, 32, 20);
             box-sizing: border-box;
@@ -108,40 +95,64 @@
         }
 
         .newsTOP h1 {
-            font-size: 55px;
-            font-weight: bolder;
+            font-size:37px;
+            letter-spacing:5px;
+            color:rgb(248, 238, 217);
+            background-color: rgb(163, 135, 73);
+            border-radius: 50px;
+            padding:8px 25px;
             text-align: center;
+            display: inline-block;
+           
+            /* margin-right: 95px; */
         }
 
         .newsTOP {
             font-weight: bolder;
             text-align: center;
-            padding-bottom: 20px;
+            padding-bottom: 0px;
             letter-spacing: 15px;
             position: relative;
         }
+         /* 最新消息的h2設定 */
+         .col-md-4 h2 {
+            color: rgb(58, 40, 13);
+            font-size: 25px;
+            letter-spacing:3px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .col-md-4 p {
+            color: rgb(58, 40, 13);
+            font-size: 16px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
 
         .newsBOTTOM {
-            font-size: 22px;
+            font-size: 20px;
             text-align: justify;
+            
         }
-
+        /* 下面是最新消息的纜位間距設定 */
         .item {
-            border-right: 1px solid black;
-            padding-right: 30px;
-
+            border-right: 1px solid rgb(29, 13, 13);
+            padding-right:30px;
+            font-size: 20px;
         }
-
+        /* 甜點蛋糕甜點文字設定 */
         .product .item-name1 {
             background-color: rgb(233, 210, 167);
-            font-size: 32px;
-            padding: 10px;
+            font-size: 27px;
+            padding: 5px;
             padding-left: 20px;
             padding-right: 20px;
-            margin-top: 40px;
-            margin-left: 430px;
-            margin-bottom: 10px;
+            margin-top:30px;
+            margin-left: 420px;
+            margin-bottom:0px;
             text-align: center;
+            letter-spacing: 4px;
             display: inline-block;
             border-radius: 30px;
             box-sizing: border-box;
@@ -149,12 +160,13 @@
 
         .product .item-name2 {
             background-color: rgb(233, 210, 167);
-            font-size: 32px;
+            font-size: 27px;
             padding-left: 20px;
             padding-right: 20px;
-            margin-left: 460px;
+            margin-left:460px;
             margin-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom:0px;
+            letter-spacing: 4px;
             text-align: center;
             display: inline-block;
             border-radius: 30px;
@@ -163,28 +175,20 @@
 
         .product .item-name3 {
             background-color: rgb(233, 210, 167);
-            font-size: 32px;
+            font-size:27px;
             padding-left: 50px;
             padding-right: 50px;
             margin: 00px;
-            margin-left: 460px;
+            margin-left: 430px;
             margin-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom:0px;
+            letter-spacing: 4px;
             text-align: center;
             display: inline-block;
             border-radius: 30px;
             box-sizing: border-box;
         }
-
-        .col-md-4 h2 {
-            color: rgb(51, 32, 20);
-            font-size: 32px;
-            letter-spacing: 2px;
-            text-align: left;
-        }
-
-        /* 上面是設定圖片圓點的css */
-
+       
         .bg-img1 {
             max-width: 100%;
             height: 780px;
@@ -207,62 +211,59 @@
             background-image: url("img/slider_03.jpg");
             background-size: cover;
             background-position: center;
-
         }
-
+        /* 下面是 logo位置設定 */
+        .navbar-brand {
+            position:absolute;
+            left:70px;
+            top:17px;
+        }
+        /* 下面是導覽列li的設定 */
         .nav-item {
             font-family: "Microsoft Jhehgheis";
-            left: 150px;
+            left:250px;
+            top:15px;
             position: relative;
-            border-left: solid 1px gray;
-            padding-left: 15px;
-            padding-right: 40px;
+            border-left: solid 1px rgb(197, 189, 189);
+            border-inline-end-style: initial;
+            padding-left:15px;
+            padding-right:15px;
+            letter-spacing:5px;
             box-sizing: border-box;
-
+          
         }
-
+        /* 導覽列文字大小更改 */
+        .nav-link {
+            font-size: 24px;
+            font-family: "Microsoft JhengHei";
+        }
         .nav-item active {
             display: inline-block;
         }
-
-        .navbar-brand {
-            position: relative;
-            left: 100px;
-        }
-
         .section1 {
             width: 100%;
-            height: 750px;
-            background-image: url('img/section1_pic.jpg');
-            background-position: center;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin-bottom: 40px;
+            margin-bottom:70px;
         }
 
         .section2 {
             max-width: 100%;
-            height: 750px;
-            margin-bottom:20px;
-            background-repeat: no-repeat;
+            margin-bottom:50px;
+            /* background-repeat: no-repeat; */
         }
 
         .section3 {
             max-width: 100%;
-            height: 1150px;
             background-color: #B5F1E5;
             text-align: center;
             font-family: "Microsoft JhengHei";
-            margin-bottom: 20px;
+            padding-bottom:20px;
             position: relative;
             color: rgb(58, 40, 13);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+           
         }
 
         .section3_Top {
-            padding-top: 40px;
+            padding-top: 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -270,15 +271,14 @@
 
         .section3_Top h1 {
             display: inline-block;
-            font-size:53px;
-            font-weight: bold;
-            /* border: solid 1px gray; */
-            padding-bottom: 20px;
+            font-size:39px;
+            border-bottom: solid 1px gray;
+            padding-bottom: 10px;
             letter-spacing: 5px;
-            margin-top: 60px;
+            margin-top:15px;
         }
 
-        .line_L {
+        /* .line_L {
             display: inline-block;
             border: solid 1px gray;
             width: calc((100% - 400px)/2);
@@ -286,105 +286,58 @@
 
         .line_R {
             display: inline-block;
-            border: solid 1px gray;
+            border-bottom: solid 1px gray;
             width: calc((100% - 400px)/2);
-        }
+        } */
 
         .section3_bottom h1 {
-            font-size: 46px;
+           font-size:35px;
            background-color:rgba(4, 170, 162, 0.8);
            border-radius: 50px;
             /* font-weight: bold; */
             color: rgb(253, 251, 249);
             line-height: 60px;
-            letter-spacing: 6px;
-            margin-top: 15px;
-            padding:10px;
+            letter-spacing: 4px;
+            padding:5px;
             padding-left:20px;
             padding-right:20px;
             display: inline-block;
+            margin-top:15px;
+            
         }
-
         .section3_bottom h2 {
-            font-size: 33px;
-            color: rgb(58, 40, 13);
-            line-height: 58px;
-            margin-top: 28px;
+            font-size:23px;
+            color: rgb(11, 68, 68);
+            letter-spacing: 1px;
+            line-height:40px;
+            margin-top:15px;
+            margin-bottom:340px;
+          
         }
 
         .section3_bottom {
             margin: 0 auto;
             color: rgb(58, 40, 13);
+            position:relative;
         }
 
         .section3_bottom .img {
             max-width: 100%;
-            position: relative;
-            display: inline-block;
-            border-radius: 1200px;
-        }
-
-        .word {
-            opacity: 0;
-            font-size: 28px;
-            background-color: rgb(58, 40, 13);
-            border-radius: 80px;
-            color: rgb(255, 255, 255);
             position: absolute;
-            left: 65px;
-            bottom: 40px;
-            padding-left: 20px;
-            padding-bottom: 10px;
-            padding-right: 30px;
-            z-index: 100;
+            display: inline-block;
+            
         }
-
-        .section3_bottom .word:hover {
-            opacity: 1;
-            text-shadow: black;
-
-
-        }
-
         .img .img1 {
-            width: 400px;
-            position: relative;
-            right: 400px;
-            top: -50px;
+            max-width: 100%;
+            position: absolute;
+            left:-475px;
+            bottom:5px;
         }
-
-        .img .img2 {
-            position: relative;
-            right: 0px;
-            top: -330px;
-        }
-
-        .img .img3 {
-            position: relative;
-            right: -400px;
-            top: -850px;
-        }
-        .img4{
-            opacity: 0.8;
-            position: relative;
-            width: 150px;
-            right: 330px;
-            bottom: 1400px;
-            z-index: 1;
-        }
-        .img5{
-            opacity: 0.8;
-            position: relative;
-            width: 150px;
-            left: 1170px;
-            bottom: 1681px;
-            z-index: 1;
-        }
-
         .section5 h1 {
             font-size: 50px;
             text-align: center;
             padding: 50px;
+            letter-spacing: 5px;
         }
 
         .section5 h2 {
@@ -398,22 +351,10 @@
         .product card {
             background-color: pink;
         }
-
-        #map {
-            width: 100%;
-            height: 450px;
-        }
-
         .navitme {
             border-left: solid 1px gray;
 
         }
-
-        .nav-link {
-            font-size: 30px;
-            font-family: "Microsoft JhengHei";
-        }
-
         .product {
             max-width: 100%;
             font-family: "Microsoft JhengHei";
@@ -422,49 +363,36 @@
         }
 
         .product_Top {
-            padding-top: 40px;
+            padding-top:70px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            text-align: center;
         }
-
+        /* 商品總攬文字設定 */
         .product_Top h1 {
-            display: inline-block;
-            font-size: 50px;
-
+            /* display: inline-block; */
+            font-size:39px;
+            letter-spacing: 10px;
+            /* border-top:solid 1px gray; */
+            border-bottom:solid 1px gray;
+            border-spacing: inherit;
+            padding-bottom: 10px;
         }
-
-        .product_Top .line_L {
-            display: inline-block;
-            border: solid 1px gray;
-            width: calc((100% - 400px)/2);
-
-        }
-
-        .product_Top .line_L h1 {
-            text-align: center;
-        }
-
-        .product_Top .line_R {
-            display: inline-block;
-            border: solid 1px gray;
-            width: calc((100% - 400px)/2);
-
-        }
-
         .product .item-h2 {
-            font-size: 34px;
+            font-size:29px;
             text-align: center;
-            letter-spacing: 5px;
-            padding-top: 40px;
+            letter-spacing: 8px;
+            padding-top:10px;
+          
         }
-
+        /* 產品名稱文字設定 */
         .product .row {
-            padding: 20px;
-            padding-top: 29px;
-            font-size: 26px;
+            padding: 15px;
+            padding-top:20px;
+            font-size: 21px;
             text-align: center;
-            letter-spacing: 1px;
+            letter-spacing:1px;
+            text-align: center;
         }
 
         /* #abc:hover #pic1{
@@ -472,9 +400,14 @@
              opacity: 0.9; */
 
         .col-md-4 .product-price {
-            padding-bottom: 25px;
+            font-size: 13px;
+            margin-bottom:30px;
+           
         }
-
+        .col-md-4 .product-text {
+            font-size: 16px;
+            margin-top:4px;
+        }
         .aboutus {
             color: rgb(51, 32, 20);
             background-image: url("img/aboutme-pic03-01.jpg");
@@ -483,7 +416,7 @@
         }
 
         .about_Top {
-            padding-top: 40px;
+            padding-top:50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -491,23 +424,26 @@
 
         .about_Top h1 {
             display: inline-block;
-            font-size: 50px;
+            font-size:40px;
+            letter-spacing:8px;
+            margin-bottom: 30px;
         }
 
         .about_Top .line_L {
             display: inline-block;
-            border: solid 1px rgb(92, 90, 90);
-            width: calc((100% - 400px)/2);
+            border: solid 1px rgb(141, 139, 139);
+            width: calc((100% - 300px)/2);
         }
 
         .about_Top .line_R {
             display: inline-block;
-            border: solid 1px rgb(92, 90, 90);
-            width: calc((100% - 400px)/2);
+            border: solid 1px rgb(141, 139, 139);
+            width: calc((100% - 300px)/2);
         }
 
         .aboutus .top h1 {
-            font-size: 42px;
+            font-size: 40px;
+
         }
 
         .aboutus .block {
@@ -516,17 +452,17 @@
         }
 
         .aboutus .block1 {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(238, 227, 178, 0.3);
             display: inline-block;
             text-align: center;
             border-radius: 20px;
-            padding: 10px;
-            margin-bottom: 60px;
+            padding-left:100px;
+            padding-right:100px;
         }
 
         .block .pic {
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top:40px;
+            margin-right:20px; 
             text-align: center;
         }
 
@@ -538,12 +474,20 @@
         }
 
         .block h1 {
-            margin-bottom: 25px;
-            margin-top: 40px;
+            font-size: 36px;
+            color: rgb(138, 106, 66);
+           
+            margin-top:30px;
+           
         }
-
+        /* 品牌小內文設定 */
         .block h2 {
             margin-bottom: 50px;
+            letter-spacing: 2px;
+            line-height:45px;
+            font-size: 22px;
+            margin-top:10px;
+            color: rgb(138, 106, 66);
         }
 
         .about_mid {
@@ -551,12 +495,12 @@
             background-image: url("img/aboutme-pic02-01.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            background-position:center;
+            background-position:center center;
             background-attachment: fixed;
-            height: 600px;
+            height: 550px;
             max-width: 100%;
-            margin-bottom: 58px;
-            margin-top: 100px;
+            margin-bottom:130px;
+            margin-top: 40px;
         }
 
         .abotu_mid .pic {
@@ -566,7 +510,7 @@
         .about_bottom {
             position: relative;
             text-align: left;
-            margin-bottom: 60px;
+            margin-bottom: 20px;
         }
 
         .about_bottom .pic2 {
@@ -574,62 +518,75 @@
             justify-content: center;
             align-items: center;
             width: 500px;
-            height: 450px;
+            height: 400px;
             background-color: rgb(255, 177, 31);
             position: absolute;
             border-radius: 30px;
             right: 30px;
-            top: 75px;
+            top: 50px;
         }
 
         .about_bottom .pic2 h2 {
             line-height: 60px;
             color: azure;
+            font-size:22px;
         }
 
         .infor_L {
-            border: solid 1px rgb(209, 208, 208);
-            margin: 0 auto;
+           padding-top:40px;
+           background-color: rgb(172, 255, 255);
+           top: 60px;
+           left:15px;
+           margin:0 auto;
         }
 
         .infor_L h2 {
+            font-size:30px;
+            border-radius: 70px;
             text-align: left;
             line-height: 50px;
             color: rgb(51, 32, 20);
-            margin-top: 20px;
             margin-left: 20px;
+            display: inline-block;
         }
 
         .infor_L h4 {
+            font-size: 20px;
             text-align: left;
-            line-height: 50px;
+            line-height: 40px;
             color: rgb(51, 32, 20);
             margin-left: 30px;
             margin-bottom: 20px;
             box-sizing: border-box;
         }
-
+        #map {
+            width: 100%;
+            height:550px;
+            border-radius:5px;
+        }
+        
+        /* 地圖設定 */
         .infor_R {
             display: inline-block;
             overflow: hidden;
-            margin-top: 80px;
-            right: 35px;
-            border-left: solid 1px gray;
+            right:30px;
+            top:60px;
+            /* text-outline: 60px; */
+            margin:0 auto;
         }
 
         .shopping ul {
-            max-width: 1130px;
+            max-width: 1140px;
             box-sizing: border-box;
             text-align: center;
-            color: rgb(51, 32, 20);
-            background-color: rgb(177, 169, 176);
-            border: solid 1px rgb(226, 226, 226);
             margin-bottom: 100px;
-            margin-top: 50px;
+            margin-top: 150px;
         }
 
         .shopping li {
-            font-size: 24px;
+            font-size: 23px;
+            letter-spacing:3px;
+            border-bottom:solid 1px rgb(156, 153, 153);
             display: inline-block;
             box-sizing: border-box;
             list-style: none;
@@ -646,98 +603,27 @@
             border-right: solid 1px gray;
         }
 
-        .footer_container {
-            background-color: rgb(216, 163, 84);
-            padding-top: 80px;
-            margin-top: 20px;
-            position: relative;
+        .fotter-top {
+           max-width: 100%;
+           position: relative;
         }
 
-        .footer_container .block1,
-        .block2,
-        .block3 {
-            border: solid 1px gray;
-            width: 200px;
-            height: 200px;
-            float: left;
-        }
-
-        .footer_container p {
-            font-size: 25px;
-            color: rgb(51, 32, 20);
-            line-height: 40px;
-        }
-
-        footer_container h4 {
-            position: absolute;
-            right: 50px;
-        }
-
-        .footer_container .block2 p {
-            text-align: left;
-            margin-left: 200px;
-        }
-
-        .footer_container .col-md-6 {
-            width: 430px;
-        }
-
-        .footer_container .col-md-4 {
-
-            margin-right: 80px;
-        }
-
-        .col-md-6 ul li {
-            line-height: 44px;
-            font-size: 23px;
-            list-style: none;
-
-        }
-
-        .col-md-4 ul li {
-            line-height: 44px;
-            font-size: 23px;
-            list-style: none;
-        }
-
-        .footer_container .row {
-            display: inline-flex;
-            color: rgb(51, 32, 20);
-            margin-right: 20px;
-            padding-left: 10px;
-        }
-
-        .footer_container .col-md-6 .h4 {
-            letter-spacing: 100px;
-        }
-
-        .copyright {
-            text-align: center;
-            height: 60px;
-            color: white;
-            background-color: rgb(53, 49, 49);
-            padding-top: 20px;
-        }
-
-        .icon {
-            position: relative;
-            left: 920px;
-            bottom: 70px;
-        }
+        
 
         #go_top {
-            position: absolute;
             position: fixed;
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height:60px;
             background-image: url("img/go-top-01.png");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            right:40px;
-            bottom:120px;
+            right:15px;
+            bottom:110px;
             z-index: 1;
+            opacity: 0.4;
         }
+
         .bgc {
             position: relative;
             margin-top: 20px;
@@ -745,15 +631,29 @@
 
         #product_anchor {
             position: absolute;
-            top: -160px;
-            left: 0;
+            top:0px;
+            left:10;
         }
 
         #aboutus {
-            top: -150px;
+            top: 0px;
             left: 0;
             position: absolute;
         }
+       
+        .footer_container .img{
+            width: 100%;
+           
+        }
+        .copyright {
+        background-color: rgb(133, 108, 69);
+        text-align: center;
+        color: beige;
+        padding: 10px;
+        
+        } 
+
+
     </style>
 </head>
 
@@ -853,27 +753,27 @@
     <div class="container">
         <div class="news-container">
             <div class="news">
-                <div class="newsTOP">
+                <div class="newsTOP" >
                     <h1>最新消息</h1>
                 </div>
                 <div class="newsBOTTOM">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="item">
+                            <div class="item" >
                                 <h2>2018周年慶全館9折</h2>
-                                <p>即日起至2/30止館內下單購買商品滿1000元即享有9折優惠。</p>
+                                <p>即日起至3/30止館內下單購買商品滿1000元即享有9折優惠。</p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="item">
-                                <h2>情人節限定商品</h2>
-                                <p>特別的日子給親愛最甜的心意，1/31前熱情如火熱預購中。</p>
+                            <div class="item" >
+                                <h2>專屬情人節限定商品</h2>
+                                <p>特別的日子給親愛最甜的心意，2/10火熱預購中。</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="item">
                                 <h2>加Line會員獨享優惠</h2>
-                                <p>加入三分甜 Line 好友即可享有專屬特定優惠。</p>
+                                <p>加入三分甜 Line 好友，即可享有專屬會員的超值優惠。</p>
                             </div>
                         </div>
                     </div>
@@ -881,43 +781,30 @@
             </div>
         </div>
     </div>
-    <div class="section1"></div>
-    <div class="section2">
+    <div class="section1" data-aos="fade-up" data-aos-duration="4000" >
+        <img class=img-fluid src="img/section1_pic.jpg" alt="">
+    </div>
+    <div class="section2"data-aos="fade-up" data-aos-duration="3400" >
         <img class=img-fluid src="img/section2_pic.jpg" alt="">
     </div>
     <div class="section3">
-        <div class="container" data-aos="fade-up">
-            <div class="section3_Top">
+        <div class="container">
+            <div class="section3_Top"  data-aos="fade-right" data-aos-delay='100'>
                 <div class="line_L"></div>
-                <h1>熱銷人氣商品</h1>
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;熱銷人氣商品&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                 <div class="line_R"></div>
             </div>
-            <div class="section3_bottom">
-                <h1>經典不敗必點商品</h1>
+            <div class="section3_bottom" data-aos="fade-right"  data-aos-delay='100'>
+                <h1>經典不敗必買商品</h1>
                 <h2>下午茶一定要的甜點!!
                     <br> 幸福系甜點－黑森林巧克力蛋糕，必嘗經典口味；
                     <br>店內熱銷商品－法式檸檬塔，酸甜滑順； 夢幻系甜點－夢幻繽紛馬卡龍， 法國著名甜點，酥脆外殼，綿密內層，
                     <br>咬一口~好療癒!!
-                </h2>>
+                </h2>
                 <div class="img">
                     <div class="img1">
-                        <div class="word">
-                            黑森林巧克力蛋糕
-                        </div>
-                        <img src="img/section3_pic01.png" >
+                        <img class="img-responsive" src="img/section3_pic01.png">
                     </div>
-                    <div class="img2">
-                        <img src="img/section3_pic02.png">
-                    </div>
-                    <div class="img3">
-                        <img src="img/section3_pic03.png">
-                    </div>
-                </div>
-                <div class="img4">
-                    <img src="img/section3_pic04.png">
-                </div>
-                <div class="img5">
-                    <img src="img/section3_pic05.png">
                 </div>
             </div>
         </div>
@@ -925,18 +812,20 @@
     <div class="container" style="position:relative;">
         <div id="product_anchor"></div>
         <div class="product">
-            <div class="product_Top">
+            <div class="product_Top"  data-aos="fade-right" data-aos-delay='20'>
                 <div class="line_L"></div>
-                <h1>商品總覽</h1>
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;商品總覽&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                 <div class="line_R"></div>
             </div>
-            <div class="item-h2">經典蛋糕甜點/手工餅乾/風味飲品</div>
+            <div class="item-h2" data-aos="fade-right" data-aos-delay='20'>經典蛋糕甜點/手工餅乾/風味飲品</div>
+        <div class="container" style="position:relative;">
+            <div id="item-name1"></div>
             <div class="item-name1">經典蛋糕甜點</div>
             <div class="row" style="position:relative;">
                 <div class="col-md-4" id="abc">
 
                     <img class="img-fluid" id="pic1" src="img/product-01.jpg" alt="">
-                    <div class="product-text">黑森林巧克力蛋糕(6吋)</div>
+                    <div class="product-text" >黑森林巧克力蛋糕(6吋)</div>
                     <div class="product-price"> NT:380</div>
                 </div>
                 <div class="col-md-4">
@@ -982,6 +871,7 @@
                 </div>
             </div>
             <div class="item-name2">手工餅乾</div>
+                <div id="ietm-name2"></div>
             <div class="row">
                 <div class="col-md-4">
                     <img class="img-fluid" src="img/product-10.jpg" alt="">
@@ -1025,47 +915,48 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
-    <div class="aboutus" style="position:relative;">
+    <div class="aboutus" style="position:relative;"  >
         <div id="aboutus"></div>
-        <div class="about_Top">
-            <div class="line_L"></div>
+        <div class="about_Top" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" >
+            <div class="line_L" ></div>
             <h1>品牌故事</h1>
             <div class="line_R"></div>
         </div>
-        <div class="block">
-            <div class="block1">
-                <div class="pic">
+        <div class="block"  >
+            <div class="block1" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" >
+                <div class="pic"  >
                     <img src="img/logo-01.png">
                 </div>
                 <h1>手感溫度 健康本味</h1>
                 <h2>甜點不只是甜點，還有愛與溫度在裡頭。
-                    <br>健康、本味、無添加是我們對三分甜的堅持，透過愛與溫度做出
-                    <br>幸福療癒的甜點；用心手作呈現給一樣喜歡甜點的您，
-                    <br>讓生活時時刻刻充滿幸福美味。
+                    <br>健康、本味、無添加是我們對三分甜的堅持，透過愛與溫度
+                    <br>做出幸福療癒的甜點；用心手作呈現給一樣喜歡甜點
+                    <br>的您，讓生活時時刻刻充滿幸福美味。
                 </h2>
             </div>
         </div>
-        <div class="about_mid"></div>
+        <div class="about_mid" ></div>
     </div>
     <div class="container">
         <div class="about_bottom">
-
-            <div class="pic1" data-aos="fade-up">
+            <div class="pic1" data-aos="zoom-in">
                 <img src="img/handmade-hand-01.jpg">
             </div>
-            <div class="pic2">
-                <h2 data-aos="fade-left">嚴選當季健康食材 健康手作
+            <div class="pic2" data-aos="zoom-in-up" data-aos-delay='300'>
+                <h2>嚴選當季健康食材 健康手作
                     <br> 用心看得見!
                     <br> 美味甜點值得您來品嚐!
                     <br>
                 </h2>
-                </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row ">
+        <div class="row">
             <div class="infor_L col-6">
                 <h2>〈門市資訊〉</h2>
                 <h4>
@@ -1076,7 +967,7 @@
                     <br>現場採取自助式座位，恕不提供預約服務。
                     <br>甜點商品以現場為主，歡迎外帶。
                     <br>定購方式：e-mail、line、電話
-                    <br>●小叮嚀：訂單確認後，請來電再次確認後，
+                    <br><br>●小叮嚀：訂單確認後，請來電再次確認後，
                     <br> 才會開始處理訂單喔。
                 </h4>
             </div>
@@ -1084,74 +975,41 @@
                 <div id="map"></div>
             </div>
         </div>
-        <div class="shopping">
-            <ul>
-                <li>商品訂購
-                    <br>五天到貨(含下單日)</li>
-                <li>黑貓宅急便低溫配送
-                    <br>周一、周日不提供</li>
-                <li>滿額3000免運費
-                    <br>當天單筆訂購</li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer_container">
-        <div class="container">
+    <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="logo">
-                                <img src="img/logo-01-2.png" -bottom:100px;>
-                            </div>
-                            <div class="bgc">
-                                <img src="img/QRCode.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>ABOUT US</h4>
-                            <ul>
-                                <li>H O M E</li>
-                                <li>關於我們</li>
-                                <li>退款政策</li>
-                                <li>隱私政策</li>
-                                <li>服務條款</li>
-                            </ul>
-                        </div>
+                <div class="shoppine col-12">
+                    <div class="shopping" data-aos="fade-right" data-aos-easing='easy'>
+                        <ul>
+                            <li >商品訂購
+                                <br>五天到貨(含下單日)</li>
+                            <li>黑貓宅急便低溫配送
+                                <br>周一、周日不提供</li>
+                            <li>滿額3000免運費
+                                <br>當天單筆訂購</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h4>COMPANY</h4>
-                    <ul>
-                        <li>地址：台中市西區美村路一段258號</li>
-                        <li>電話：04-23055718</li>
-                        <li>客服專線：04-22052853(AM 9:00-PM 17:00)</li>
-                        <li>Mail：service@three sweets.com.tw</li>
-                        <li>Line@ID線上專人客服:@three sweets</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <div class="icon">
-                        <img src="img/icon-01.png">
-                        <img src="img/icon-02.png">
-                        <img src="img/icon-03.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="go_top"></div>
-        <a id="go_top" href="#"></a>
+            </div> 
+    </div> 
 
-
-
-        <div class="copyright">©color c’ode 三分甜手作甜點小屋 All Rights Reserved.</div>
     </div>
+    <div class="fotter-top">
+        <img class=img-fluid src="img/footer-top.jpg" alt="">
+        <div id="go_top"></div>  
+            <img class="go_top" >
+            <a id="go_top" href="#"></a>
+    </div>   
+    <div class="copyright">
+        <p> Copyright © 2018 三分甜甜點小屋. All rights reserved</p>
+    </div>             
+
+
 
     <script>
         function initMap() {
             var uluru = { lat: 24.148332, lng: 120.6620673 };
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
+                zoom: 19,
                 center: uluru
             });
             var marker = new google.maps.Marker({
@@ -1171,7 +1029,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    
+
     <script>
         $(function () {
             $('a[href*="#"]:not([href="#"])').click(function () {
@@ -1189,7 +1047,6 @@
                 }
             });
         });
-
     </script>
     <!-- Initialize Swiper -->
     <script>
@@ -1211,12 +1068,10 @@
             },
         });
     </script>
-          
-          <script>
-                AOS.init();
-              </script>    
 
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

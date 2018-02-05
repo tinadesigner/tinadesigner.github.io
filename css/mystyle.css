@@ -347,6 +347,7 @@
 .aboutus {
     background-color: #E2D6A8;
     margin: 0 auto;
+    max-width: 1920px;
 
 }
 .about_Top {
